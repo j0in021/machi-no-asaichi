@@ -181,3 +181,32 @@ footer{
     }
 
 }
+
+@media (max-width:430px){
+    header{
+        padding-left: 12px;
+        padding-right: 12px;
+        gap: 12px;
+    }
+
+    .header-title{
+        flex-shrink: 0;
+    }
+
+    .header-title p{
+        white-space: nowrap;
+    }
+
+    .menu{
+        gap: 12px;
+    }
+
+    main{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    footer{
+        margin-left: 16px;
+    }
+}
