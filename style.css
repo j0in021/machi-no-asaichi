@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: #FAF8F2;
     color: #24372D;
@@ -49,6 +53,8 @@ li{
     display: flex;
     align-items: center;
     gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .subtitle{
@@ -133,7 +139,7 @@ footer{
     margin-left: 50px;
 }
 
-@media (max-width:375px){
+@media (max-width:600px){
     .intro-image{
         position: absolute;
         width: 120px;
@@ -153,7 +159,8 @@ footer{
     .intro{
         position: relative;
         display: block;
-        max-width: 350px;
+        width: 100%;
+        max-width: none;
         height: 400px;
     }
 
@@ -162,7 +169,15 @@ footer{
         margin-right: 20px;
     }
     .cards {
-    grid-template-columns: 1fr;
-}
+        grid-template-columns: 1fr;
+    }
+
+    .event-details{
+        flex-direction: column;
+    }
+
+    footer{
+        margin-left: 20px;
+    }
 
 }
